@@ -13,18 +13,20 @@ public class CheckGuest {
 		String nomeCognome = scanner.nextLine();
 		
 		boolean accettato = false;
-		for (int i = 0; i < invitatiFesta.length; i++) {
+		for(int i = 0; i < invitatiFesta.length; i++) {
+			
 			if(nomeCognome.equals(invitatiFesta[i])) {    
 				accettato = true; 
 				System.out.println("Perfetto sei sulla lista");
 				break;
 			}
+		}
 			 if (!accettato) {
 				System.out.println("Mi dispiace non sei sulla lista");
 			}				
 				
-				
-		}
+			 	
+		
 		
 		scanner.close(); 
 	}
